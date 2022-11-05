@@ -20,22 +20,23 @@ section {
   padding-left: 20px;
   border-radius: 20px;
   box-shadow: 5px 5px 25px darkgray;
-  /* option d'ombre premiere valeur  = projextion vers la droite, 2éme value = projextion vers le bas, 3émé  : intenstié de l couleur,  4émé = couleur*/
+  /* option d'ombre premiere valeur  = projection vers la droit, 2éme value = projection vers le bas, 3émé  : intenstié de la couleur,  4émé = couleur*/
 }
 
 body {
-  /* Typography Declarations */
+  /* font pour le body */
   color: #222222;
   font-size: 1em;
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+/* Pour le header */
 .content-footer,
 .masthead-heading,
 .masthead-intro {
   text-align: center;
 }
 
+/* Pour le header */
 .masthead {
   padding: 6em 0;
   background-image: url('image/back.jpg');
@@ -44,6 +45,7 @@ body {
   border-top: solid 1em #d4e7e8;
 }
 
+/* Pour le header */
 .masthead-intro {
   /* Layout Declarations */
   margin-bottom: 0.1em;
@@ -52,6 +54,7 @@ body {
   font-size: 2em;
 }
 
+/* Pour le header */
 .masthead-heading {
   /* Layout Declarations */
   color: #8256a5;
@@ -63,10 +66,12 @@ body {
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
-
+/* Pour le header et pour les sections d'acceuil.html */
 .introduction-section,
 .location-section,
-.questions-section {
+.questions-section,
+.ta,
+.mb-3 {
   max-width: 38em;
   margin-left: auto;
   margin-right: auto;
@@ -76,9 +81,10 @@ body {
 .introduction-section > p,
 .location-section > p,
 .questions-section,
-.content-footer > p {
+.content-footer > p,
+.mp3 > p {
   /* Typography Declarations */
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: 0.05em;
 }
 
@@ -91,7 +97,7 @@ body {
 }
 
 section > h1 {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .content-footer,
@@ -122,19 +128,6 @@ section > h1 {
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
-.introduction > p,
-.location > p,
-.content-footer > p {
-  /* Typography Declarations */
-  font-weight: 300;
-  letter-spacing: 0.05em;
-}
-h2 {
-  /* Typography Declarations */
-  font-family: 'Gentium Book Basic', Georgia, serif;
-  font-size: 1.2em;
-  font-weight: bold;
-}
 
 .introduction-section,
 .location-section,
@@ -143,22 +136,24 @@ h2 {
   max-width: 38em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
 }
-.content-footer {
-  margin: 50px 0;
-  padding: 20px 0;
-  text-align: center;
-  background-color: #73a8c2;
-  text-decoration: none;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
-.social > li {
-  display: inline-block;
-  margin: 0 5px;
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
-.content-footer > p {
-  color: #f7ede1;
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
+
 a {
   font-weight: bold;
   text-decoration: none;
@@ -189,6 +184,7 @@ a {
   background-image: url('image/back2.jpg') no-repeat center center;
   background-size: cover;
 }
+
 .MyExp {
   background-color: white;
   text-align: center;
@@ -225,7 +221,7 @@ a {
 .hide {
   color: white;
 }
-/* Clear floats after image containers */
+/* Effacer les Floats après les containers d'images */
 .imgnext::after {
   content: '';
   clear: both;
@@ -234,3 +230,30 @@ a {
 .img1 {
   margin-right: 20%;
 }
+
+#img2 {
+  margin-left: 11.2%;
+}
+#footer {
+  background: #272833;
+  padding: 2em;
+  text-align: center;
+}
+/* footer {
+  position: bottom;
+  background-color: black;
+  width: 100%;
+  color: white;
+  bottom: 0;
+
+  
+  justify-content: space-between;
+  margin: 0px 0px;
+  font-weight: 600;
+  font-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px;
+  font-size: 20px;
+} */

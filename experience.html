@@ -1,61 +1,101 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="cssbootstrap/bootstrap.min.css">
-        <title>Experience</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="cssbootstrap/bootstrap.min.css" />
+    <title>Experience</title>
+  </head>
 
-    <body class="Exp"> 
-        <style>
-            .Exp { 
-                background-image: url("image/back2.jpg");
-            }
-        </style>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="acceuil.html">Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="acceuil.html">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="competence.html">Compétence</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="experience.html">Experience</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Loisir
-                    </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="loisirs.html">Anime/Manga</a></li>
-                                <li><a class="dropdown-item" href="loisirs.html">Les Jeux</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <section class="MyExp">Mes expérience professionnel</section>
+  <body class="Exp">
+    <style>
+      .Exp {
+        background-image: url('image/back2.jpg');
+      }
+    </style>
 
-        <section class="ExpPro"> <a>Experience :</a> 
-            <p>Stage de 3eme : En 2018,1 semaines de stage chez une boutique réparation de téléphone</p>
-            <p>Stage 2nd : En 2019, 4 semaines de stage chez une boutique réparation de téléphone</p>
-            <a>Compétences acquises :</a>
-            <li>Responsabilité</li>
-            <li>sécurité</li>
-            <li>engagement</li>
-        </section>
+    <!--****************Creation nav bar****************************-->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="acceuil.html">ePortfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="acceuil.html"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="competence.html">Compétence</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experience.html">Experience</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Loisirs
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="loisirs.html">Anime/Manga</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="loisirs.html"
+                    >Les jeux vidéos</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--****************Fin  nav bar****************************-->
+    <!--****************Creation des sections****************************-->
+    <section class="MyExp">Mes expérience professionnel</section>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    </body>
+    <section class="ExpPro">
+      <a>Experience :</a>
+      <p>
+        Stage de 3eme : En 2018,1 semaines de stage chez une boutique réparation
+        de téléphone
+      </p>
+      <p>
+        Stage 2nd : En 2019, 4 semaines de stage chez une boutique réparation de
+        téléphone
+      </p>
+      <a>Compétences acquises :</a>
+      <li>Responsabilité</li>
+      <li>sécurité</li>
+      <li>engagement</li>
+    </section>
+    <!--****************Fin des sections****************************-->
+
+    <!--****************Creation du script pour navbar****************************-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+    <!--****************Creation du script pour navbar****************************-->
+  </body>
 </html>
