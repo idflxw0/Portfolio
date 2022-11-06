@@ -1,181 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="cssbootstrap/bootstrap.min.css" />
 
-    <title>Portfolio</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="cssbootstrap/bootstrap.min.css" />
 
-  <body class="acc">
+  <title>Portfolio</title>
+</head>
+
+<body class="acc">
+  <style>
+    .acc {
+      background-color: white;
+    }
+  </style>
+  <!--****************Creation du NAVBAR****************************-->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ePortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="acceuil.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="competence.html">Compétence</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experience.html">Expériences</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Loisirs
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="loisirs.html">Anime/Manga</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="loisirs.html">Les jeux vidéos</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--****************Fin du NAVBAR****************************-->
+
+  <!--****************Creation du header****************************-->
+  <header class="masthead">
+    <p class="masthead-intro">Bonjour C'est</p>
+    <h1 class="masthead-heading">Gobigan!</h1>
     <style>
-      .acc {
-        background-color: white;
+      .masthead {
+        background-image: url('image/back.jpg');
       }
     </style>
-    <!--****************Creation du NAVBAR****************************-->
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">ePortfolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="acceuil.html"
-                >Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="competence.html">Compétence</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="experience.html">Expériences</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Loisirs
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="loisirs.html">Anime/Manga</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="loisirs.html"
-                    >Les jeux vidéos</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!--****************Fin du NAVBAR****************************-->
+  </header>
+  <!--****************Fin du header****************************-->
 
-    <!--****************Creation du header****************************-->
-    <header class="masthead">
-      <p class="masthead-intro">Bonjour C'est</p>
-      <h1 class="masthead-heading">Gobigan!</h1>
-      <style>
-        .masthead {
-          background-image: url('image/back.jpg');
-        }
-      </style>
-    </header>
-    <!--****************Fin du header****************************-->
+  <!--****************Creation du section pour ajouter les textes****************************-->
+  <section class="introduction-section">
+    <h1>Introduction</h1>
+    <p>
+      Je m'appelle Gobigan MATHIALAHAN, j'ai actuellement 18 ans et je suis
+      étudiant à l'IUT de Paris Descartes. Ce que j'aime le plus dans
+      l'informatique, c'est l'éventail de possibilités qu'offre ce domaine.
+      Passionné dans ce domaine, j'ai pu acquérir de nombreuses compétences et
+      des connaissances. Rassurez-vous, l'informatique n'est pas ma seule
+      passion. J'aime aussi les jeux vidéo, les mangas/anime.
+    </p>
+  </section>
+  <section class="location-section">
+    <h1>Mon IUT</h1>
+    <p>Mon IUT est situé à Paris 16ème.</p>
+  </section>
+  <section class="questions-section">
+    <h1>à propos de moi</h1>
+    <h2>Quels sont mes Loisirs?</h2>
+    <a href="loisirs.html"> Decouvrez mes loisir ici!</a>
+    <h2>Quel est mon métier de rêve?</h2>
+    <p>Mon job de rêve est de devenir ingénieur logiciel</p>
+    <h2>Pourquoi veux-je être ingénieur logiciel ?</h2>
+    <p>
+      Parce que programmer c'est génial et développer des applications c'est
+      aussi génial
+    </p>
+  </section>
+  <section class="ta">
+    <h1>Mes langages de programmation préférés :</h1>
+    <hr />
+    <table>
+      <tr>
+        <th>Langages</th>
+        <th>Avis</th>
+        <th>Raison</th>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>3.5 / 5</td>
+        <td>Language ancien et compliqué à utilisé</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>5 / 5</td>
+        <td>Facile à apprendre et comprendre</td>
+      </tr>
+      <tr>
+        <td>Flutter</td>
+        <td>4 / 5</td>
+        <td>Facile à développer les applications modernes</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>4 / 5</td>
+        <td>Facile à apprendre et comprendre</td>
+      </tr>
+    </table>
+  </section>
+  <!--****************Fin du section****************************-->
 
-    <!--****************Creation du section pour ajouter les textes****************************-->
-    <section class="introduction-section">
-      <h1>Introduction</h1>
-      <p>
-        Je m'appelle Gobigan MATHIALAHAN, j'ai actuellement 18 ans et je suis
-        étudiant à l'IUT de Paris Descartes. Ce que j'aime le plus dans
-        l'informatique, c'est l'éventail de possibilités qu'offre ce domaine.
-        Passionné dans ce domaine, j'ai pu acquérir de nombreuses compétences et
-        des connaissances. Rassurez-vous, l'informatique n'est pas ma seule
-        passion. J'aime aussi les jeux vidéo, les mangas/anime.
-      </p>
-    </section>
-    <section class="location-section">
-      <h1>Mon IUT</h1>
-      <p>Mon IUT est situé à Paris 16ème.</p>
-    </section>
-    <section class="questions-section">
-      <h1>à propos de moi</h1>
-      <h2>Quels sont mes Loisirs?</h2>
-      <a href="loisirs.html"> Decouvrez mes loisir ici!</a>
-      <h2>Quel est mon métier de rêve?</h2>
-      <p>Mon job de rêve est de devenir ingénieur logiciel</p>
-      <h2>Pourquoi veux-je être ingénieur logiciel ?</h2>
-      <p>
-        Parce que programmer c'est génial et développer des applications c'est
-        aussi génial
-      </p>
-    </section>
-    <section class="ta">
-      <h1>Mes langages de programmation préférés :</h1>
-      <hr />
-      <table>
-        <tr>
-          <th>Langages</th>
-          <th>Avis</th>
-          <th>Raison</th>
-        </tr>
-        <tr>
-          <td>C</td>
-          <td>3.5 / 5</td>
-          <td>Language ancien et compliqué à utilisé</td>
-        </tr>
-        <tr>
-          <td>Java</td>
-          <td>5 / 5</td>
-          <td>Facile à apprendre et comprendre</td>
-        </tr>
-        <tr>
-          <td>Flutter</td>
-          <td>4 / 5</td>
-          <td>Facile à devlopper les application modern</td>
-        </tr>
-        <tr>
-          <td>Python</td>
-          <td>4 / 5</td>
-          <td>Facile à apprendre et comprendre</td>
-        </tr>
-      </table>
-    </section>
-    <!--****************Fin du section****************************-->
+  <!--****************Creation du formulaire****************************-->
 
-    <!--****************Creation du formulaire****************************-->
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label"
-        >Email address</label
-      >
-      <input
-        type="email"
-        class="form-control"
-        id="exampleFormControlInput1"
-        placeholder="prenom.nom@example.com" />
-    </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="prenom.nom@example.com" />
+  </div>
 
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label"
-        >Ajouter vos commentaire ici!</label
-      >
-      <textarea
-        class="form-control"
-        id="exampleFormControlTextarea1"
-        rows="3"></textarea>
-    </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Ajouter vos commentaire ici!</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div class="mb-3">
+    <button type="submit" class="btn btn-primary mb-3">Envoyer</button>
+  </div>
+  <footer id="footer">
+    <a href="https://github.com/" target="_blank" class="icons"><i class="fa-brands fa-github"
+        style="font-size: 30px;"></i></a>
+    <a href="https://instagram.com/" target="_blank" class="icons"><i class="fa-brands fa-instagram"
+        style="font-size: 30px;"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank" class="icons"><i class="fa-brands fa-linkedin"
+        style="font-size: 30px;"></i></a>
+    <a href="https://www.twitch.tv/" target="_blank" class="icons"><i class="fa-brands fa-twitch"
+        style="font-size: 30px;"></i></a>
+    <a href="https://open.spotify.com/" target="_blank" class="icons"><i class="fa-brands fa-spotify"
+        style="font-size: 30px;"></i></a>
+  </footer>
 
-    <footer id="footer"></footer>
+  <!--****************Fin du formulaire****************************-->
 
-    <!--****************Fin du formulaire****************************-->
+  <!--****************Creation du script pour navbar****************************-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 
-    <!--****************Creation du script pour navbar****************************-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"></script>
-    <!--****************Creation du script pour navbar****************************-->
-  </body>
+  <!--****************Fin du script pour navbar****************************-->
+
+
+  <!--****************Creation du script pour icons****************************-->
+  <script src="https://kit.fontawesome.com/5bc9c32fd5.js" crossorigin="anonymous"></script>
+  <!--****************Fin du script pour icons****************************-->
+</body>
+
 </html>
